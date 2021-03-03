@@ -84,3 +84,9 @@ int serial_write_one(char data){
   outb(SERIAL_COM1_BASE, data);
   return 0;
 }
+
+int serial_write(char *data){
+  for(unsigned int i = 0; data[i] != '\0'; i++){
+    serial_write_one(data[i]);
+  }
+}
