@@ -23,5 +23,6 @@ loader:                         								; the loader label (defined as entry poi
 
 		extern kernel_main
 		call kernel_main
+
 .loop:
 		jmp .loop                   ; loop forever

@@ -9,8 +9,6 @@
 */
 void outb(unsigned short port, unsigned char data);
 
-int write(char *buff, unsigned int len);
-
 /** inb:
  *  Read a byte from an I/O port.
  *
