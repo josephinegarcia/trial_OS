@@ -30,6 +30,6 @@ void serial_configure_modem(unsigned short com);
 int serial_is_transmit_fifo_empty(unsigned int com);
 void serial_config();
 int serial_write_one(char data);
-int serial_write(char *data);
+int serial_write(const char *data);
 
 #endif

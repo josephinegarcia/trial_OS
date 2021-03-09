@@ -28,10 +28,10 @@ enum FB_COLORS {
   FB_WHITE = 15,
 };
 
-int fb_write(char *buff, unsigned int len);
+int fb_write(const char *buff, unsigned int len);
 void fb_write_cell(unsigned int i, char c, unsigned char fg, unsigned char bg);
 void fb_move_cursor(unsigned short pos);
-int fb_write(char *buff, unsigned int len);
-void write(char *data, char outType);
+int fb_write(const char *buff, unsigned int len);
+void write(const char *data, char outType);
 
 #endif
